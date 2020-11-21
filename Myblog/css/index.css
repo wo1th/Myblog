@@ -1,0 +1,59 @@
+@charset="utf-8"
+
+ul{list-style: none;}
+a{text-decoration: none;color: #000000;}
+.left {float: left;}
+.right{float: right;}
+.center{margin: 0 auto;}
+.padding {padding: 14px;}
+
+
+/* 导航栏*/
+.fixed {position: fixed; z-index: 1; top: 0; width: 100%;}
+.header {background-color: #545350; opacity: 0.6;}
+.nav {background: LightGrey; height: 47px; width: 1024px;}
+.nav ul{margin-left: 2%;}
+.nav ul li { float: left; text-align: center; margin-left: 2%; width: 64px; line-height: 47px; display: block;}
+.nav ul li input {height: 24px; width: 168px; border: 1px solid #3F3E3C; border-radius: 8px;}
+.nav ul li a{color: #000; font-size: 16px;}
+.nav ul li a:hover{color: #fff;}
+
+/* 中部内容 */
+
+.radi {border:1px solid #000000; border-radius: 8px;}
+.main {width: 100%; margin-top: 47px; overflow: hidden;}
+.main_new {width: 1024px; height: 224px; padding: 10px 0 10px 0;}
+.segment {width: 50%; height: 46px; background: #F4F3EF; opacity: 0.6; text-align: center; font-size: 18px; font-weight: bold; line-height: 46px;}
+.stacktable {width: 100%;}
+.column {width: 254px; height: 173px; position: relative; }
+.img_group {margin: 8px 8px;}
+.img_ {max-width: 100%; max-height: 100%;}
+.img_tips h4 {background: #4183C4; color: #fff; position: absolute; bottom: 0; left: 0; padding: 4px 0 4px 0; opacity: 0.6; text-align: center; width: 254px;}
+
+
+/* 主要信息 */
+.height {}
+.table_info {width: 1024px; height: 200px; margin: 14px 0 14px 0; background: #ffffff; border-radius: 8px; opacity: 0.9;}
+.info {width: 750px; height: 166px; padding: 14px;}
+.info h3 {margin: 0 0 14px 0;}
+.info p {font-size: 16px; font-family: "microsoft yahei"; text-indent: 32px; line-height: 26px;}
+.info_zsdl_fx {width: 600px; height: 20px; margin-top: 20px;}
+.info_zsdl {}
+.info_fx {padding: 14px;}
+.info_fx a {font-size: 14px; font-family: "microsoft yahei"; border: 1px solid #454545; border-radius: 6px;}
+.zsdl {padding: 14px;}
+.table_img {max-width: 195px; max-height: 190px; padding: 14px;}
+
+/* 分页 */
+.page {width: 1024px; height: 46px; background: #FFFFFF; border-radius: 8px; opacity: 0.9; line-height: 46px;}
+.nu {width: 70%;}
+.nd {width: 15%;}
+
+
+
+/* 底部 */
+.footer {background: #000009; width: 100%; padding-bottom: 20px; margin-top: 20px;}
+.three {height: 168px; padding-left: 25%; padding-right: 25%;}
+.three div {font-size: 16px; color: #ffffff;}
+.meinfo {width: 30%; height: 166px; text-align: center; border-right: 2px solid #5d5855; border-bottom: 2px solid #5d5855;}
+
