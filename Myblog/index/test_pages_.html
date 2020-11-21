@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<script Language = 'JavaScript'>
+
+var curPage =0; maxPage =4;
+function selectedPageByID(inputId)
+{
+ var divs = document.getElementsByTagName('div');
+ var divCounter = 1;
+ var divcountlength = divs.length;
+ for(var no = 0; no < divcountlength; no++)
+ {
+  if(divs[no].id == inputId)
+  {
+   divs[no].style.display = "block";
+   curPage = no;
+  }
+  else
+  {
+   divs[no].style.display = "none";
+  }
+ }
+}
+
+function selectedPageByNo(pageNo)
+{
+ var divs = document.getElementsByTagName('div');
+ var divCounter = 1;
+ var divcountlength = divs.length;
+ for(var no = 0; no < divcountlength; no++)
+ {
+  if(no == pageNo)
+  {
+   divs[no].style.display = "block";
+   curPage = no;
+   
+  }
+  else
+  {
+   divs[no].style.display = "none";
+  }
+ }
+}
+
+function getNextPage()
+{
+ curPage = parseInt(curPage)+1;
+ if (curPage > maxPage) curPage = maxPage;
+ selectedPageByNo(curPage);
+}
+
+function getPrePage()
+{
+ curPage = parseInt(curPage)-1;
+ if (curPage < 0) curPage = 0;
+ selectedPageByNo(curPage);
+}
+
+</script>
+</head>
+<a href='javascript:selectedPageByNo(0);'> |< </a>
+<a href='javascript:getPrePage();'> < </a>
+<a href='javascript:selectedPageByID("Page1");'> 1 </a>
+<a href='javascript:selectedPageByID("Page2");'> 2 </a>
+<a href='javascript:selectedPageByID("Page3");'> 3 </a>
+<a href='javascript:selectedPageByID("Page4");'> 4 </a>
+<a href='javascript:selectedPageByID("Page5");'> 5 </a>
+<a href='javascript:getNextPage();'> > </a>
+<a href='javascript:selectedPageByNo(4);'> >| </a>
+
+<hr>
+
+<div id ='Page1' style='display:none'>
+Hello!<br>This is testing Page 1.
+</div>
+<div id = 'Page2' style='display:none'>
+Hello!<br>This is testing Page 2.
+</div>
+<div id = 'Page3' style='display:none'>
+Hello!<br>This is testing Page 3.
+</div>
+<div id = 'Page4' style='display:none'>
+Hello!<br>This is testing Page 4.
+</div>
+<div id = 'Page5' style='display:none'>
+Hello!<br>This is testing Page 5.
+</div>
+
+</body>
+</html>
